@@ -11,11 +11,11 @@ Once you are watching the contract you can execute the following functions to tr
 * ```transferPunk(address to, uint index)``` transfer ownership of a punk to someone without requiring any payment.
 * ```offerPunkForSale(uint punkIndex, uint minSalePriceInWei)``` offer one of your punks for sale to anyone willing to pay the minimum price specified.
 * ```offerPunkForSaleToAddress(uint punkIndex, uint minSalePriceInWei, address toAddress)``` offer one of your punks for some minumum price, but only to the address specified. Use this to sell a punk to a specific person.
-* ```enterBidForPunk(uint punkIndex)``` enters a bid for the punkIndex specified. Send in the amount of your bid in the value field and we will hold that ether in escrow.
+* ```enterBidForPunk(uint punkIndex)``` enters a bid for the punkIndex specified. Send in the amount of your bid in the value field and we will hold that trx in escrow.
 * ```acceptBidForPunk(uint punkIndex, uint minPrice)``` to accept a pending bid for the specified punk. You can specify a minPrice in Wei to protect yourself from someone switching the bid for a lower bid.
-* ```withdrawBidForPunk(uint punkIndex)``` will withdraw a bid for the specified punk and send you the ether from the bid.
-* ```buyPunk(uint punkIndex)``` buy punk at the specified index. That punk needs to be previously offered for sale, and you need to have sent at least the amount of Ether specified as the sale price for the punk.
-* ```withdraw()``` claim all the Ether people have previously sent to buy your punks.
+* ```withdrawBidForPunk(uint punkIndex)``` will withdraw a bid for the specified punk and send you the trx from the bid.
+* ```buyPunk(uint punkIndex)``` buy punk at the specified index. That punk needs to be previously offered for sale, and you need to have sent at least the amount of Trx specified as the sale price for the punk.
+* ```withdraw()``` claim all the Trx people have previously sent to buy your punks.
 
 ### Verifying the Punks
 
